@@ -1,0 +1,96 @@
+@import "vars";
+
+/* mixins */
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+    }
+    @media (min-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
+}
+
+/* @include adaptiv-font(40, 24) */
+
+/* Default styles */
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: "Century Gothic";
+    color: #000;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: $mw + px;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/CenturyGothic.eot");
+    src: url("../fonts/CenturyGothic.woff2") format("woff2"), url("../fonts/CenturyGothic.woff") format("woff"),
+        url("../fonts/CenturyGothic.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Blocks */
+@import "blocks/header.scss";
+@import "blocks/burger.scss";
+@import "blocks/hero.scss";
+@import "blocks/about.scss";
+@import "blocks/our-work.scss";
+@import "blocks/description.scss";
+@import "blocks/certificates.scss";
+@import "blocks/certificates-2.scss";
+@import "blocks/work-performed.scss";
+@import "blocks/partners.scss";

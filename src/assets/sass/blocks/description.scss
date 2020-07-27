@@ -1,0 +1,224 @@
+.description {
+  position: relative;
+}
+
+.description__sudoremont,
+.description__truby,
+.description__sudostroenie {
+  background-color: #84d4c5;
+}
+.flex__wrap {
+  display: flex;
+}
+
+.sudoremont__container {
+  flex: 0 1 59%;
+  padding-top: 11rem;
+  padding-left: 15rem;
+}
+
+.description__text,
+.description__title {
+  /* font-size: 2.4rem; */
+  @include adaptiv-font(24, 12);
+}
+
+.sudoremont__title {
+  margin-bottom: 4.5rem;
+  color: $black;
+}
+.sudoremont__text {
+  padding-right: 20rem;
+  color: $gray;
+}
+.sudoremont__image {
+  flex: 0 1 41%;
+}
+
+.sudoremont__image img,
+.metcon__image img,
+.truby__image img,
+.svarka__image img,
+.sudostroenie__image img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.description__metcon,
+.description__svarka {
+  background-color: #b2f2e6;
+}
+
+.flex__wrap--reverse {
+  flex-direction: row-reverse;
+}
+
+.metcon__container {
+  flex: 0 1 51%;
+  padding-top: 7.5rem;
+  padding-right: 10.3rem;
+  padding-left: 10.7rem;
+}
+
+.metcon__title {
+  margin-bottom: 5rem;
+  text-align: right;
+  color: $black;
+}
+
+.metcon__text {
+  text-align: right;
+  color: $gray;
+}
+
+.metcon__image {
+  flex: 0 1 49%;
+}
+
+.absolute__image {
+  position: absolute;
+  top: 940px;
+  left: 0;
+}
+
+.absolute__image1 {
+  position: absolute;
+  bottom: 420px;
+  left: 0;
+}
+
+.absolute__image2 {
+  position: absolute;
+  bottom: -230px;
+  left: 0;
+}
+
+.truby__container {
+  flex: 0 1 58%;
+  padding-top: 7.5rem;
+  padding-left: 15rem;
+  padding-right: 17.8rem;
+}
+
+.truby__title {
+  margin-bottom: 3rem;
+}
+
+.truby__text {
+  color: $gray;
+}
+
+.truby__image {
+  flex: 0 1 42%;
+}
+
+.svarka__container {
+  flex: 0 1 59%;
+  padding-top: 6rem;
+  padding-right: 10.3rem;
+  padding-left: 26rem;
+}
+
+.svarka__title,
+.svarka__text {
+  text-align: right;
+}
+
+.svarka__title {
+  margin-bottom: 4.5rem;
+  color: $black;
+}
+
+.svarka__text {
+  color: $gray;
+}
+
+.svarka__image {
+  flex: 0 1 41%;
+}
+
+.sudostroenie__container {
+  flex: 0 1 58%;
+  padding-top: 15rem;
+  padding-left: 15rem;
+  padding-right: 19rem;
+}
+.sudostroenie__title {
+  margin-bottom: 4.5rem;
+  color: $black;
+}
+.sudostroenie__text {
+  color: $gray;
+}
+
+.sudostroenie__image {
+  flex: 0 1 42%;
+}
+
+.__text--padding {
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 1440px) {
+  .sudoremont__container,
+  .metcon__container,
+  .truby__container,
+  .svarka__container,
+  .sudostroenie__container {
+    padding-top: 7rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .sudoremont__text {
+    padding: 0;
+  }
+  .absolute__image2 {
+    bottom: 0;
+  }
+  .absolute__image1 {
+    bottom: 480px;
+  }
+}
+
+@media (max-width: 767px) {
+  .flex__wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:nth-child(1) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .sudoremont__container,
+  .metcon__container,
+  .truby__container,
+  .svarka__container,
+  .sudostroenie__container {
+    padding: 2rem;
+  }
+  .description__text,
+  .description__title {
+    text-align: center;
+  }
+  .sudoremont__title,
+  .metcon__title,
+  .truby__title,
+  .svarka__title,
+  .sudostroenie__text {
+    margin-bottom: 2rem;
+  }
+  .sudoremont__image img,
+  .metcon__image img,
+  .truby__image img,
+  .svarka__image img,
+  .sudostroenie__image img {
+    height: auto;
+    display: block;
+  }
+
+  .absolute__image2 {
+    bottom: 0;
+  }
+}

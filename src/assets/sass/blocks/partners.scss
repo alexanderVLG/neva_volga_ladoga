@@ -1,0 +1,46 @@
+.partners {
+}
+
+.partners__flex {
+  display: flex;
+  justify-content: center;
+}
+
+.partners__title {
+  padding-top: 6rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 3.1rem;
+  font-weight: 400;
+  color: $gray;
+}
+.partners__text {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #438cca;
+}
+
+.partners__container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 86%;
+}
+.partners__item {
+  flex: 0 1 16%;
+
+  &:nth-child(1) {
+    margin-left: 14rem;
+  }
+
+  &:nth-child(5) {
+    margin-right: 14.5rem;
+  }
+}
+.partners__image {
+}
+
+.partners__name {
+}
