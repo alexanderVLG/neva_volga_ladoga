@@ -71,7 +71,13 @@ a:hover {
     font-display: swap;
 }
 
-p {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
@@ -94,3 +100,5 @@ ol {
 @import "blocks/certificates-2.scss";
 @import "blocks/work-performed.scss";
 @import "blocks/partners.scss";
+@import "blocks/career.scss";
+@import "blocks/footer.scss";

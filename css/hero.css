@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+  max-width: 100%;
+}
+
+.hero-image__bg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero__logo {
+  position: absolute;
+  bottom: 85px;
+  left: 182px;
+}
+
+.hero__img {
+  position: absolute;
+  bottom: -145px;
+  left: 0;
+  z-index: 1;
+}
+
+@media (max-width: 1500px) {
+  .hero__logo {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero__logo {
+    width: 100px;
+    left: 10px;
+    bottom: 15%;
+  }
+  .hero__img {
+    bottom: -30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__logo {
+    bottom: 12%;
+  }
+}

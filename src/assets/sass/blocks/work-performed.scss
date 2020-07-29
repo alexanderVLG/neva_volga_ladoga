@@ -35,7 +35,7 @@
 }
 .performance__item {
   margin: 0 0.75rem 4rem;
-  flex: 0 1 24%;
+  flex: 0 1 23%;
 
   &:nth-child(4),
   &:nth-child(8) {
@@ -87,33 +87,124 @@
   padding-bottom: 7rem;
 }
 
-@media (max-width: 1630px) {
-  .performance__item:nth-child(4),
+@media (max-width: 1635px) {
+  /* .performance__item:nth-child(4),
   .performance__item:nth-child(8) {
-    margin-right: 1.5rem;
+    margin-right: 1.5rem; 
+
+  }*/
+  .work-performed__container {
+    padding-left: 50 / $mw * 100%;
+    padding-right: 50 / $mw * 100%;
+  }
+  .performance__item {
+    margin: 0 0.5rem 4rem;
+    flex: 0 1 18%;
   }
 }
+
+@media (max-width: 1350px) {
+}
+
+@media (max-width: 1335px) {
+  .work-performed__container {
+    padding-left: 10 / $mw * 100%;
+    padding-right: 10 / $mw * 100%;
+  }
+}
+
+@media (max-width: 1270px) {
+  .work-performed-item__text {
+    width: 240px;
+    height: 150px;
+    padding: 2rem 0.5rem;
+    @include adaptiv-font(20, 10);
+  }
+
+  .text--padding-3 {
+    padding: 4rem 2.5rem;
+  }
+
+  .text--padding-2 {
+    padding: 1.2rem 1rem;
+  }
+
+  .text--padding {
+    padding: 4rem 3rem;
+  }
+}
+
+@media (max-width: 1047px) {
+  .work-performed-item__text {
+    width: 195px;
+    @include adaptiv-font(20, 8);
+  }
+  .text--padding {
+    padding: 4rem 0.5rem;
+  }
+  .text--padding-3 {
+    padding: 4.5rem 0.5rem;
+  }
+}
+
 @media (max-width: 876px) {
   .work-performed__container {
     padding: 0;
   }
 }
 
+@media (max-width: 835px) {
+  .performance__item {
+    margin: 0 0.5rem 1rem;
+  }
+  .work-performed-item__text {
+    width: 175px;
+    height: 130px;
+    @include adaptiv-font(20, 7);
+  }
+}
+
 @media (max-width: 767px) {
-  .text--padding-2 {
-    padding: 3.5rem 1.2rem;
+  .performance__item {
+    margin-bottom: 3rem;
   }
 
   .work-performed-item__text {
-    padding: 5rem 3rem;
+    width: 280px;
+    height: 150px;
+    padding: 4rem 1rem;
+    @include adaptiv-font(20, 12);
   }
 
+  .text--padding {
+    padding: 5rem 1rem;
+  }
+
+  .text--padding-3 {
+    padding: 5.5rem 1rem;
+  }
+}
+
+@media (max-width: 375px) {
   .youtube__container iframe {
     flex-basis: 95%;
     height: 300px;
   }
-
-  .performance__item {
-    flex: 0 1 40%;
+  .text--padding-2 {
+    padding: 1.5rem 1.2rem;
+  }
+  .text--padding-3 {
+    padding: 6rem 1rem;
+  }
+  .work-performed-item__text {
+    padding: 5rem 3rem;
   }
 }
+
+/* 
+
+  
+
+  
+
+  */
