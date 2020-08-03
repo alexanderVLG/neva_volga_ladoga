@@ -1045,6 +1045,7 @@ ol {
     display: block;
     -o-object-fit: cover;
     object-fit: cover;
+    opacity: 0.5;
 }
 
 .certificates-2__content {
@@ -1839,11 +1840,11 @@ ol {
 }
 
 .address__city {
-    margin-top: 4.3rem;
+    margin-top: 5rem;
 }
 
 .contact__phone {
-    margin-top: 2.7rem;
+    margin-top: 3rem;
 }
 
 .contact__mail {
@@ -1851,7 +1852,7 @@ ol {
 }
 
 .website__address {
-    margin-top: 1.2rem;
+    margin-top: 0.8rem;
 }
 
 .inn-ogrn {
@@ -1895,15 +1896,15 @@ ol {
 
 @media (max-width: 1500px) {
     .website__address {
-        margin-top: 3.5rem;
+        margin-top: 3.3rem;
     }
 
     .contact__phone {
-        margin-top: 3.5rem;
+        margin-top: 3.2rem;
     }
 
     .contact__mail {
-        margin-top: -1.5rem;
+        margin-top: -1.2rem;
     }
 }
 
@@ -1913,7 +1914,7 @@ ol {
     }
 
     .website__address {
-        margin-top: 3.7rem;
+        margin-top: 2.5rem;
     }
 
     .contact__phone {
